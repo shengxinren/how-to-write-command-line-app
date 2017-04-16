@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals, absolute_import
 #
 # 如何创建命令行应用 documentation build configuration file, created by
 # sphinx-quickstart on Sun Apr 16 17:16:02 2017.
