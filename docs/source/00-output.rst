@@ -75,6 +75,10 @@ termcolor是一个比较简单的实现：
 .. literalinclude:: examples/e03.py
     :language: python
 
+.. image:: images/e03.gif
+    :alt: e03
+    :align: center
+
 有些聪明的读者可能发现，当新的字符串比之前短的时候会出现问题。其实是因为已经被flush出去的字符并不会主动清空，所以
 只有新写入的被修改了。针对这点我目前的解决方案是先输出一波空格把之前的字符串冲掉然后重新写：
 
@@ -90,6 +94,10 @@ termcolor是一个比较简单的实现：
 .. literalinclude:: examples/e05.py
     :language: python
 
+.. image:: images/e05.gif
+    :alt: e05
+    :align: center
+
 为什么进度栏会一直在最下面，因为print打印出了换行符，下次打印进度栏的时候自然到最下面去了。
 
 一个真正的进度条:
@@ -98,6 +106,10 @@ termcolor是一个比较简单的实现：
 
 .. literalinclude:: examples/e06.py
     :language: python
+
+.. image:: images/e06.gif
+    :alt: e06
+    :align: center
 
 看到这，有人又要问了，这个还是有点麻烦，有没有简便的方法，其实还真有。
 
@@ -116,5 +128,9 @@ termcolor是一个比较简单的实现：
 
 .. literalinclude:: examples/e07.py
     :language: python
+
+.. image:: images/e07.gif
+    :alt: e07
+    :align: center
 
 咋样？是不是很清爽！
